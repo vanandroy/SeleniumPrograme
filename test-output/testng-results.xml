@@ -2,130 +2,50 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[open Browser]]>
+      <![CDATA[createModule]]>
     </line>
     <line>
-      <![CDATA[login]]>
+      <![CDATA[modifyModule]]>
     </line>
     <line>
-      <![CDATA[createCustomer]]>
-    </line>
-    <line>
-      <![CDATA[logout]]>
-    </line>
-    <line>
-      <![CDATA[login]]>
-    </line>
-    <line>
-      <![CDATA[modifyCustomer]]>
-    </line>
-    <line>
-      <![CDATA[logout]]>
-    </line>
-    <line>
-      <![CDATA[login]]>
-    </line>
-    <line>
-      <![CDATA[deleteCustomer]]>
-    </line>
-    <line>
-      <![CDATA[logout]]>
-    </line>
-    <line>
-      <![CDATA[close Browser]]>
+      <![CDATA[deleteModule]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-01-04T19:07:25 IST" name="Default suite" finished-at="2023-01-04T19:08:26 IST" duration-ms="60928">
+  <suite started-at="2023-01-23T11:09:06 IST" name="Default suite" finished-at="2023-01-23T11:09:06 IST" duration-ms="90">
     <groups>
       <group name="smoke test">
-        <method signature="CustomerModule.createCustomer()[pri:1, instance:com.actitime.testscript.CustomerModule@3c407114]" name="createCustomer" class="com.actitime.testscript.CustomerModule"/>
-        <method signature="CustomerModule.deleteCustomer()[pri:3, instance:com.actitime.testscript.CustomerModule@3c407114]" name="deleteCustomer" class="com.actitime.testscript.CustomerModule"/>
+        <method signature="TaskModule.createModule()[pri:1, instance:com.actitime.testscript.TaskModule@1622f1b]" name="createModule" class="com.actitime.testscript.TaskModule"/>
+        <method signature="TaskModule.modifyModule()[pri:2, instance:com.actitime.testscript.TaskModule@1622f1b]" name="modifyModule" class="com.actitime.testscript.TaskModule"/>
       </group> <!-- smoke test -->
       <group name="regression test">
-        <method signature="CustomerModule.createCustomer()[pri:1, instance:com.actitime.testscript.CustomerModule@3c407114]" name="createCustomer" class="com.actitime.testscript.CustomerModule"/>
-        <method signature="CustomerModule.modifyCustomer()[pri:2, instance:com.actitime.testscript.CustomerModule@3c407114]" name="modifyCustomer" class="com.actitime.testscript.CustomerModule"/>
+        <method signature="TaskModule.createModule()[pri:1, instance:com.actitime.testscript.TaskModule@1622f1b]" name="createModule" class="com.actitime.testscript.TaskModule"/>
+        <method signature="TaskModule.deleteModule()[pri:3, instance:com.actitime.testscript.TaskModule@1622f1b]" name="deleteModule" class="com.actitime.testscript.TaskModule"/>
       </group> <!-- regression test -->
     </groups>
-    <test started-at="2023-01-04T19:07:25 IST" name="Default test" finished-at="2023-01-04T19:08:26 IST" duration-ms="60928">
-      <class name="com.actitime.testscript.CustomerModule">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:07:25 IST" name="openBrowser" finished-at="2023-01-04T19:07:48 IST" duration-ms="22831" status="PASS">
+    <test started-at="2023-01-23T11:09:06 IST" name="Default test" finished-at="2023-01-23T11:09:06 IST" duration-ms="90">
+      <class name="com.actitime.testscript.TaskModule">
+        <test-method signature="createModule()[pri:1, instance:com.actitime.testscript.TaskModule@1622f1b]" started-at="2023-01-23T11:09:06 IST" name="createModule" finished-at="2023-01-23T11:09:06 IST" duration-ms="17" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[open Browser]]>
+              <![CDATA[createModule]]>
             </line>
           </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:07:48 IST" name="login" finished-at="2023-01-04T19:08:00 IST" duration-ms="11223" status="PASS">
+        </test-method> <!-- createModule -->
+        <test-method signature="modifyModule()[pri:2, instance:com.actitime.testscript.TaskModule@1622f1b]" started-at="2023-01-23T11:09:06 IST" name="modifyModule" finished-at="2023-01-23T11:09:06 IST" depends-on-methods="com.actitime.testscript.TaskModule.createModule" duration-ms="5" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[login]]>
+              <![CDATA[modifyModule]]>
             </line>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="createCustomer()[pri:1, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:08:00 IST" name="createCustomer" finished-at="2023-01-04T19:08:00 IST" duration-ms="13" status="PASS">
+        </test-method> <!-- modifyModule -->
+        <test-method signature="deleteModule()[pri:3, instance:com.actitime.testscript.TaskModule@1622f1b]" started-at="2023-01-23T11:09:06 IST" name="deleteModule" finished-at="2023-01-23T11:09:06 IST" depends-on-methods="com.actitime.testscript.TaskModule.createModule, com.actitime.testscript.TaskModule.modifyModule" duration-ms="4" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[createCustomer]]>
+              <![CDATA[deleteModule]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createCustomer -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:08:00 IST" name="logout" finished-at="2023-01-04T19:08:11 IST" duration-ms="11361" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[logout]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:08:11 IST" name="login" finished-at="2023-01-04T19:08:14 IST" duration-ms="2953" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[login]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="modifyCustomer()[pri:2, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:08:14 IST" name="modifyCustomer" finished-at="2023-01-04T19:08:14 IST" depends-on-methods="com.actitime.testscript.CustomerModule.createCustomer" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[modifyCustomer]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- modifyCustomer -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:08:14 IST" name="logout" finished-at="2023-01-04T19:08:18 IST" duration-ms="4440" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[logout]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:08:18 IST" name="login" finished-at="2023-01-04T19:08:20 IST" duration-ms="2069" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[login]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="deleteCustomer()[pri:3, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:08:20 IST" name="deleteCustomer" finished-at="2023-01-04T19:08:20 IST" depends-on-methods="com.actitime.testscript.CustomerModule.modifyCustomer, com.actitime.testscript.CustomerModule.createCustomer" duration-ms="2" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[deleteCustomer]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- deleteCustomer -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:08:20 IST" name="logout" finished-at="2023-01-04T19:08:25 IST" duration-ms="4870" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[logout]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.actitime.testscript.CustomerModule@3c407114]" started-at="2023-01-04T19:08:25 IST" name="closeBrowser" finished-at="2023-01-04T19:08:26 IST" duration-ms="1074" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[close Browser]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.actitime.testscript.CustomerModule -->
+        </test-method> <!-- deleteModule -->
+      </class> <!-- com.actitime.testscript.TaskModule -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

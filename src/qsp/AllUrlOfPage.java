@@ -20,7 +20,7 @@ public static void main(String []args) {
 	int count =nks .size();
 	System.out.println(count);
 	for(WebElement n:nks ) {
-		String text = n.getText();
+		String text = n.getAttribute("href");
 		System.out.println(text);
 	}
 	driver.close();

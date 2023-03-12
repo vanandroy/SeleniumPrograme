@@ -3,12 +3,15 @@ package com.actitime.pom;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class LogoutPage {
+	@FindBy(id="logoutLink")
 private WebElement lgout;
 
 public LogoutPage(WebDriver driver) {
-	lgout=driver.findElement(By.id("logoutLink"));
+	PageFactory.initElements(driver, this);
 }
 public void setlgout() {
 	lgout.click();

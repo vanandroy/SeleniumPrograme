@@ -2,6 +2,7 @@ package qsp;
 
 import java.util.HashSet;
 import java.util.List;
+import java.util.TreeSet;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +16,7 @@ public class OnlyDuplicateOption {
 	}
 	public static void main(String[] args) {
 		HashSet<String> h=new HashSet<String>();
+		TreeSet<String> ts=new TreeSet<String>();
 		WebDriver driver=new ChromeDriver();
 		driver.get("file:///C:/Users/HP/Desktop/Notepad/ListBox.html");
 		WebElement mtrListBox = driver.findElement(By.id("mtr"));
@@ -23,11 +25,19 @@ public class OnlyDuplicateOption {
 		int count = option.size();
 		for(int i=0;i<count;i++) {
 			String text = option.get(i).getText();
-
-			if(h.add(text)==false)
+			 /*
+			
+			 if(h.add(text))
+			 
 			{
 				System.out.println(text);
 			}
+			*/
+			if(ts.add(text)==false)
+			{
+				System.out.println(text);
+			}
+			
 		}
 		driver.close();
 	}
